@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Stack Sans Notch";
+  /* font-family: "Geologica"; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* .header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.header__logo{
+    font-family: "Stack Sans Notch";
+    font-size: 50px;
+}
+
+.header__links{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+.header__link{
+    font-size: 20px;
+    font-weight: 200;
+} */
+h1 {
+  font-weight: 500;
+}
+
+.wrapper {
+  /* width: 100vw; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated {
+  opacity: 0;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.team {
+  height: 100vh;
+}
+
+.team__container {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team__header {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.team__cards {
+  margin-top: 52px;
+  display: flex;
+  gap: 5px;
+}
+
+.card {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card p {
+  font-size: 30px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.flex {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  margin-right: 35px;
+}
+
+.info:nth-child(2) {
+  border-top: 1px solid #000;
+  padding: 30px 0px 0px 0px;
+}
+
+.big {
+  font-size: 45px;
+}
+
+.medium {
+  font-size: 25px;
+}
+
+.info .flex {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.left-side {
+  width: 100%;
+}
+
+.info__skills__header {
+  margin-bottom: 15px;
+}
+
+.team__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.task__header {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.task {
+  height: 100vh;
+}
+
+.ru {
+  font-family: "Geologica";
+}
+
+.task__container {
+  padding: 70px 0px 40px 0px;
+}
+
+.task__content {
+  margin-top: 70px;
+  display: flex;
+}
+
+.task__problem {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task__solution {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+}
+
+.small {
+  font-size: 15px;
+}
+
+.problem__header {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.arrow-down {
+  background: #000;
+  height: 100px;
+  width: 5px;
+  margin: 10px 0px;
+}
+
+.task__stage {
+  align-self: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__info {
+    width: fit-content;
+  }
+
+  .team {
+    height: fit-content;
+  }
+  .team__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .team__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .left-side {
+    width: fit-content;
+  }
+
+  .info .flex {
+    flex-direction: column;
+  }
+
+  .team__cards {
+    flex-wrap: wrap;
+  }
+  .team {
+    height: auto;
+  }
+  .task__content {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+  }
+
+  .task__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .info {
+    width: fit-content;
+  }
+
+  .team__cards {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .task__stage {
+    flex-direction: column;
+  }
+}
