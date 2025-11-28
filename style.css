@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Notch:wght@200..700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap"); */
 
 *,
 *::before,
@@ -10,6 +10,11 @@
   box-sizing: border-box;
   font-family: "Stack Sans Notch";
   /* font-family: "Geologica"; */
+  transition: 0.5s;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -148,10 +153,6 @@ h1 {
   font-size: 40px;
 }
 
-.task {
-  height: 100vh;
-}
-
 .ru {
   font-family: "Geologica";
 }
@@ -163,6 +164,7 @@ h1 {
 .task__content {
   margin-top: 70px;
   display: flex;
+  gap: 40px;
 }
 
 .task__problem {
@@ -170,6 +172,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border-right: 1px solid #000; */
 }
 
 .task__solution {
@@ -177,6 +180,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.task__numerator__text {
+  font-size: 40px;
 }
 
 .point {
@@ -195,15 +202,211 @@ h1 {
 
 .arrow-down {
   background: #000;
-  height: 100px;
+  height: 60px;
   width: 5px;
   margin: 10px 0px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.left-stick {
+  position: absolute;
+  width: 5px;
+  height: 24px;
+  background: #000;
+  transform: rotate(45deg) translateX(10px);
+  bottom: 4px;
+}
+
+.right-stick {
+  position: absolute;
+  width: 5px;
+  height: 24px;
+  background: #000;
+  transform: rotate(-45deg) translateX(-10px);
+  bottom: 4px;
 }
 
 .task__stage {
   align-self: flex-start;
   align-items: center;
   gap: 20px;
+}
+
+/* ---------- SECTIONS 3–5 ---------- */
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* 3. Why our team */
+
+.why {
+  padding: 80px 0;
+}
+
+.why__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.why__content {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.why__text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why__highlights {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.why__item {
+  padding: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+/* 4. Roadmap */
+
+.roadmap {
+  padding: 80px 0;
+}
+
+.roadmap__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap__stage {
+  margin-bottom: 25px;
+}
+
+.roadmap__grid {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.roadmap__block {
+  flex: 1 1 300px;
+}
+
+.roadmap__block-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.roadmap__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* 5. Implementation */
+
+.implementation {
+  padding: 80px 0 120px 0;
+}
+
+.implementation__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.implementation__grid {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.implementation__block {
+  flex: 1 1 300px;
+}
+
+.implementation__block-title {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.implementation__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 0 30px 0;
+  margin-top: 80px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.footer__text {
+  max-width: 260px;
+  line-height: 1.4;
+  opacity: 0.7;
+}
+
+.footer__right {
+  display: flex;
+  gap: 50px;
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__col-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.footer__link {
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.footer__link:hover {
+  opacity: 1;
+}
+
+.footer__bottom {
+  margin-top: 40px;
+  text-align: center;
+  opacity: 0.6;
 }
 
 @media (max-width: 1024px) {
@@ -251,6 +454,29 @@ h1 {
   .team {
     height: auto;
   }
+
+  .task__problem {
+    width: 100%;
+    align-items: center;
+  }
+
+  .task__solution {
+    width: 100%;
+    align-items: center;
+  }
+
+  .point {
+    align-items: center;
+    text-align: center;
+  }
+
+  .point .medium {
+    margin-bottom: 10px;
+  }
+
+  .task__stage {
+    width: 100%;
+  }
   .task__content {
     flex-direction: column;
     align-items: center;
@@ -262,6 +488,37 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .why__content {
+    flex-direction: column;
+  }
+
+  .why__text,
+  .why__highlights {
+    width: 100%;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .roadmap__stage {
+    text-align: center;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer__right {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__text {
+    max-width: 100%;
   }
 }
 
@@ -277,5 +534,18 @@ h1 {
 
   .task__stage {
     flex-direction: column;
+  }
+  .why,
+  .roadmap,
+  .implementation {
+    padding: 60px 0;
+  }
+
+  .footer {
+    padding: 50px 0 25px;
+  }
+
+  .footer__logo {
+    font-size: 28px;
   }
 }

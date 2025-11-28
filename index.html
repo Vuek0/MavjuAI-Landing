@@ -75,7 +75,7 @@
         <h1 class="name">Mavju AI</h1>
       </div>
 
-      <section class="team">
+      <section id="team" class="team">
         <div class="container team__container">
           <div class="left-side">
             <h2 class="team__header">TEAM</h2>
@@ -136,7 +136,7 @@
         </div>
       </section>
 
-      <section class="task">
+      <section id="problem" class="task">
         <div class="task__container container">
           <p class="task__header">THE PROJECT GOAL</p>
           <p class="medium">Sphere: Banking</p>
@@ -160,7 +160,10 @@
                   <p class="small">- Everything runs through cash or USSD</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img src="money.png" alt="money" width="150px" height="150px" />
                 <div class="point">
@@ -171,7 +174,10 @@
                   <p class="small">- Expand operations</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img src="form.png" alt="form" width="150px" height="150px" />
                 <div class="point">
@@ -181,7 +187,10 @@
                   <p class="small">- Wait for manual review</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img
                   src="collateral.png"
@@ -199,7 +208,10 @@
                   <p class="small">- Official income records</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img
                   src="reject.png"
@@ -216,7 +228,10 @@
                   </p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img src="debt.png" alt="farmer" width="150px" height="150px" />
                 <div class="debt">
@@ -244,7 +259,10 @@
                   <p class="small">- payment or USSD history</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img
                   src="analysis.png"
@@ -262,7 +280,10 @@
                   <p class="small">- risk indicators</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img
                   src="approved.png"
@@ -278,7 +299,10 @@
                   <p class="small">- Explanation of the decision</p>
                 </div>
               </div>
-              <div class="arrow-down"></div>
+              <div class="arrow-down">
+                <div class="left-stick"></div>
+                <div class="right-stick"></div>
+              </div>
               <div class="flex task__stage">
                 <img src="grow.png" alt="grow" width="150px" height="150px" />
                 <div class="point">
@@ -300,9 +324,193 @@
           <p></p>
         </div>
       </section>
+      <section id="why" class="why">
+        <div class="container why__container">
+          <h2 class="section-title">WHY OUR TEAM CAN SOLVE THIS</h2>
+          <div class="why__content">
+            <div class="why__text">
+              <p class="medium">
+                We are a focused two-person team combining full-stack
+                engineering, AI/ML and research for financial inclusion in
+                Uzbekistan.
+              </p>
+              <p class="medium">
+                Muhammad builds reliable, production-ready systems end-to-end.
+                Ruslan designs and validates AI models and brings deep context
+                on SME and informal lending in Central Asia.
+              </p>
+              <p class="medium">
+                We move fast, keep the scope realistic for a hackathon and are
+                personally motivated to reduce 20–30% monthly informal interest
+                rates that destroy small businesses.
+              </p>
+            </div>
+            <div class="why__highlights">
+              <div class="why__item">
+                <p class="small">✔ Full-stack + AI/ML skillset</p>
+              </div>
+              <div class="why__item">
+                <p class="small">
+                  ✔ Understanding of local SME / farmer reality
+                </p>
+              </div>
+              <div class="why__item">
+                <p class="small">✔ Experience with data, APIs and UX</p>
+              </div>
+              <div class="why__item">
+                <p class="small">
+                  ✔ Strong motivation to build a real product, not a demo
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. Roadmap and current stage -->
+      <section id="roadmap" class="roadmap">
+        <div class="container roadmap__container">
+          <h2 class="section-title">ROADMAP & CURRENT STAGE</h2>
+          <p class="medium roadmap__stage">Current stage: Idea</p>
+
+          <div class="roadmap__grid">
+            <div class="roadmap__block">
+              <p class="medium roadmap__block-title">Roadmap</p>
+              <ul class="roadmap__list">
+                <li class="small">
+                  Week 1–2: Synthetic dataset & baseline ML model
+                </li>
+                <li class="small">Week 3: Scoring API (FastAPI backend)</li>
+                <li class="small">Week 4: Simple web UI + API integration</li>
+                <li class="small">
+                  Week 5: Fairness checks & explainability (SHAP-based)
+                </li>
+                <li class="small">
+                  Week 6: Model improvement, stress-testing and bank-ready
+                  version
+                </li>
+              </ul>
+            </div>
+
+            <div class="roadmap__block">
+              <p class="medium roadmap__block-title">
+                Next steps after hackathon
+              </p>
+              <ul class="roadmap__list">
+                <li class="small">
+                  Connect real alternative data sources (USSD, suppliers,
+                  payments)
+                </li>
+                <li class="small">
+                  Validate scoring quality together with a banking partner (e.g.
+                  Agrobank)
+                </li>
+                <li class="small">
+                  Deploy pilot for a limited group of SME borrowers and farmers
+                </li>
+                <li class="small">
+                  Iterate on accuracy, fairness and UX based on real-world
+                  feedback
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. How we plan to implement the solution -->
+      <section id="implementation" class="implementation">
+        <div class="container implementation__container">
+          <h2 class="section-title">HOW WE PLAN TO IMPLEMENT THE SOLUTION</h2>
+
+          <div class="implementation__grid">
+            <div class="implementation__block">
+              <p class="medium implementation__block-title">Approach</p>
+              <ul class="implementation__list">
+                <li class="small">
+                  Collect and generate synthetic data that imitates SME / farmer
+                  behavior
+                </li>
+                <li class="small">
+                  Engineer behavioral features: income stability, supplier/buyer
+                  network, payment discipline, risk patterns
+                </li>
+                <li class="small">
+                  Train a machine learning model (XGBoost) to estimate
+                  probability of default
+                </li>
+                <li class="small">
+                  Wrap the model in a credit-scoring API and connect a minimal
+                  web interface
+                </li>
+                <li class="small">
+                  Add explainability (SHAP) and fairness checks for gender /
+                  region
+                </li>
+              </ul>
+            </div>
+
+            <div class="implementation__block">
+              <p class="medium implementation__block-title">Tech stack & AI</p>
+              <ul class="implementation__list">
+                <li class="small">Frontend: HTML, CSS, JavaScript</li>
+                <li class="small">Backend: Python, FastAPI</li>
+                <li class="small">
+                  ML: XGBoost, Scikit-Learn, Pandas, synthetic data generation
+                </li>
+                <li class="small">
+                  AI usage: behavioral credit scoring, risk prediction, fairness
+                  constraints
+                </li>
+                <li class="small">
+                  Explainable AI: SHAP values to show why a borrower is approved
+                  or rejected
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- <div class="container">
         </div> -->
     </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__left">
+          <h3 class="footer__logo">Mavju AI</h3>
+          <p class="small footer__text">
+            AI-powered credit scoring for SMEs and farmers in Central Asia.
+          </p>
+        </div>
+
+        <div class="footer__right">
+          <div class="footer__col">
+            <p class="footer__col-title">Sections</p>
+            <a href="#problem" class="footer__link small">Problem & Solution</a>
+            <a href="#team" class="footer__link small">Team</a>
+            <a href="#why" class="footer__link small">Why Us</a>
+            <a href="#roadmap" class="footer__link small">Roadmap</a>
+            <a href="#implementation" class="footer__link small"
+              >Implementation</a
+            >
+          </div>
+
+          <div class="footer__col">
+            <p class="footer__col-title">Contacts</p>
+            <a href="mailto:vueko.eruko@gmail.com" class="footer__link small">
+              vueko.eruko@gmail.com
+            </a>
+            <a href="mailto:nicetryskrock@gmail.com" class="footer__link small">
+              nicetryskrock@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="small">© 2025 Mavju AI — All rights reserved.</p>
+      </div>
+    </footer>
     <script src="main.js"></script>
   </body>
 </html>
